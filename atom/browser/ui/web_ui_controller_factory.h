@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE-CHROMIUM file.
 
-#ifndef BRIGHTRAY_BROWSER_WEB_UI_CONTROLLER_FACTORY_H_
-#define BRIGHTRAY_BROWSER_WEB_UI_CONTROLLER_FACTORY_H_
+#ifndef ATOM_BROWSER_UI_WEB_UI_CONTROLLER_FACTORY_H_
+#define ATOM_BROWSER_UI_WEB_UI_CONTROLLER_FACTORY_H_
 
 #include <memory>
 
@@ -16,7 +16,7 @@ template <typename T>
 struct DefaultSingletonTraits;
 }
 
-namespace brightray {
+namespace atom {
 
 class BrowserContext;
 
@@ -43,6 +43,6 @@ class WebUIControllerFactory : public content::WebUIControllerFactory {
   DISALLOW_COPY_AND_ASSIGN(WebUIControllerFactory);
 };
 
-}  // namespace brightray
+}  // namespace atom
 
-#endif  // BRIGHTRAY_BROWSER_WEB_UI_CONTROLLER_FACTORY_H_
+#endif  // ATOM_BROWSER_UI_WEB_UI_CONTROLLER_FACTORY_H_

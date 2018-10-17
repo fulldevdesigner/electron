@@ -8,7 +8,6 @@
 #include "base/no_destructor.h"
 #include "base/path_service.h"
 #include "brightray/browser/browser_main_parts.h"
-#include "brightray/browser/devtools_manager_delegate.h"
 #include "brightray/browser/media/media_capture_devices_dispatcher.h"
 #include "content/public/browser/browser_thread.h"
 #include "content/public/common/url_constants.h"
@@ -91,10 +90,6 @@ base::FilePath BrowserClient::GetDefaultDownloadDirectory() {
     path = path.Append(FILE_PATH_LITERAL("Downloads"));
 
   return path;
-}
-
-content::DevToolsManagerDelegate* BrowserClient::GetDevToolsManagerDelegate() {
-  return new DevToolsManagerDelegate;
 }
 
 std::string BrowserClient::GetApplicationLocale() {

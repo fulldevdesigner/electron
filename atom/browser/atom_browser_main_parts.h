@@ -19,12 +19,6 @@
 class BrowserProcess;
 class IconManager;
 
-#if defined(TOOLKIT_VIEWS)
-namespace brightray {
-class ViewsDelegate;
-}
-#endif
-
 namespace net_log {
 class ChromeNetLog;
 }
@@ -39,6 +33,10 @@ class NodeBindings;
 class NodeDebugger;
 class NodeEnvironment;
 class BridgeTaskRunner;
+
+#if defined(TOOLKIT_VIEWS)
+class ViewsDelegate;
+#endif
 
 #if defined(OS_MACOSX)
 class ViewsDelegateMac;

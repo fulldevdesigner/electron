@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE-CHROMIUM file.
 
-#include "brightray/browser/web_ui_controller_factory.h"
+#include "atom/browser/ui/web_ui_controller_factory.h"
 
+#include "atom/browser/ui/devtools_ui.h"
 #include "base/memory/singleton.h"
-#include "brightray/browser/devtools_ui.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_ui.h"
 #include "content/public/common/url_constants.h"
 
-namespace brightray {
+namespace atom {
 
 namespace {
 
@@ -59,4 +59,4 @@ WebUIControllerFactory::CreateWebUIControllerForURL(content::WebUI* web_ui,
   return std::unique_ptr<content::WebUIController>();
 }
 
-}  // namespace brightray
+}  // namespace atom
